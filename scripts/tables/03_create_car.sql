@@ -4,10 +4,10 @@ DROP TABLE IF EXISTS Car;
 -- Create table
 CREATE TABLE Car (
   CarID INTEGER PRIMARY KEY AUTOINCREMENT,
-  RegistrationNumber TEXT NOT NULL,
-  Make TEXT NOT NULL,
-  Model TEXT NOT NULL,
-  Year INTEGER NOT NULL,
+  RegistrationNumber TEXT(7) NOT NULL,
+  Make TEXT(20) NOT NULL,
+  Model TEXT(50) NOT NULL,
+  Year TEXT(4) NOT NULL,
   VIN INTEGER NOT NULL,
   OwnerID INTEGER NOT NULL, -- Mandatory foreign key
   FOREIGN KEY (OwnerID) REFERENCES Owner(OwnerID)
