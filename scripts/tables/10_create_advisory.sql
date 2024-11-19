@@ -5,5 +5,5 @@ DROP TABLE IF EXISTS Advisory;
 CREATE TABLE Advisory (
   AdvisoryID INTEGER PRIMARY KEY AUTOINCREMENT,
   Description TEXT NOT NULL,
-  Severity TEXT NOT NULL Check (Severity IN ('Low', 'Medium', 'High')),
+  Severity TEXT NOT NULL Check (Severity IN ('Low', 'Medium', 'High'))
 );
