@@ -27,5 +27,4 @@ jobs:
       run: touch ./database/mot_garage_db.sqlite
 
     - name: Run Bash script
-      run: |
-        ./scripts/rebuild_database.sh
+      run: ./rebuild_database.sh
