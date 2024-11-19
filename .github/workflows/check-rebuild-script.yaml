@@ -30,7 +30,7 @@ jobs:
       run: |
         OUTPUT=$(./rebuild_database.sh)
         echo "$OUTPUT"
-        if echo "$OUTPUT" | grep -i -q "error"; then
+        if echo "$OUTPUT" | grep -iq "Error"; then
           echo "Error when rebuilding database"
           exit 1
         else
