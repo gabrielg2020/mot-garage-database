@@ -22,7 +22,7 @@ if [ "$action" = "list_tables" ]; then
 .tables
 EOF
 elif [ "$action" = "find_table" ]; then
-  # Show schema for the specified table
+  # Show tables that match the table name
   sqlite3 "database/mot_garage_db.sqlite" <<EOF
 .tables '%$table_name%'
 EOF
