@@ -26,5 +26,13 @@ jobs:
     - name: Create database
       run: touch ./database/mot_garage_db.sqlite
 
-    - name: Run Bash script
-      run: ./rebuild_database.sh
+    - name: Run Bash script & Check output
+      run: |
+        OUTPUT=$(./rebuild_database.sh)
+        echo "$OUTPUT"
+        if echo "$OUTPUT" | grep -i -q "error"; then
+          echo "Error when rebuilding database"
+          exit 1
+        else
+          echo "No errors when rebuilding database"
+        fi
