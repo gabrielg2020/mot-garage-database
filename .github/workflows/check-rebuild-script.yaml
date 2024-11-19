@@ -24,7 +24,7 @@ jobs:
       run: chmod +x ./rebuild_database.sh
 
     - name: Create database
-      run: touch database/mot_garage_db.sqlite
+      run: touch ./database/mot_garage_db.sqlite
 
     - name: Run Bash script
       run: |
