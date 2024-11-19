@@ -7,7 +7,7 @@ CREATE TABLE EmploymentHistory (
   GarageID INTEGER NOT NULL, -- Mandatory foreign key
   MechanicID INTEGER NOT NULL, -- Mandatory foreign key
   StartDate TEXT(10) NOT NULL,
-  EndDate TEXT(10) NOT NULL,
+  EndDate TEXT(10) NULL,
   FOREIGN KEY (GarageID) REFERENCES Garage(GarageID),
   FOREIGN KEY (MechanicID) REFERENCES Mechanic(MechanicID)
 );
