@@ -7,5 +7,5 @@ CREATE TABLE OwnershipHistory (
   OwnerID INTEGER NOT NULL, -- Mandatory foreign key
   CarID INTEGER NOT NULL, -- Mandatory foreign key
   StartDate TEXT(10) NOT NULL,
-  EndDate TEXT(10) NOT NULL
+  EndDate TEXT(10)
 );
