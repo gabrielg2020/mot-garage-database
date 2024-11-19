@@ -1,4 +1,8 @@
 # Run Database and run to insert data into SQL tables
 
-# Owner data
-sqlite3 database/mot_garage_db.sqlite < scripts/data/create_owner_data.sql
+for file in $(ls scripts/data/*.sql | sort); do
+  if [ -f "$file" ]; then
+    echo "Running SQL script: $file"
+    sqlite3 "database/mot_garage_db.sqlite" < $file
+  fi
+done
