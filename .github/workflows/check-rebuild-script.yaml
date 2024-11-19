@@ -28,7 +28,7 @@ jobs:
 
     - name: Run Bash script & Check output
       run: |
-        OUTPUT=$(./rebuild_database.sh)
+        OUTPUT=$(./rebuild_database.sh 2>&1)
         echo "$OUTPUT"
         if echo "$OUTPUT" | grep -iq "Error"; then
           echo "Error when rebuilding database"
