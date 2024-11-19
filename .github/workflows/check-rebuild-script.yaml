@@ -28,4 +28,4 @@ jobs:
 
     - name: Run Bash script
       run: |
-        ./scripts/your_script.sh
+        ./scripts/rebuild_database.sh
