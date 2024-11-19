@@ -7,8 +7,7 @@ touch database/mot_garage_db.sqlite
 # Run SQL scripts to rebuild database tables
 ./scripts/tables/create_tables.sh
 # Run SQL script to populate database tables
-# TODO: Uncomment the following line to populate the database
-#./scripts/data/create_data.sh
+./scripts/data/create_data.sh
 
 echo "Database has been rebuilt and populated."
 
