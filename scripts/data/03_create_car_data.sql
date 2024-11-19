@@ -1,7 +1,6 @@
 BEGIN TRANSACTION;
 
 -- Insert data
-
 INSERT INTO Car (RegistrationNumber, Make, Model, Year, VIN, OwnerID) VALUES
   ('AB12CDE', 'Ford', 'Focus', 2015, 12345678901234567, 1),
   ('FG34HIJ', 'Vauxhall', 'Corsa', 2018, 23456789012345678, 2),
