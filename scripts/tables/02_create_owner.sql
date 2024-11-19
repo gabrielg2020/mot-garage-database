@@ -7,7 +7,7 @@ CREATE TABLE Owner (
   FirstName TEXT NOT NULL,
   LastName TEXT NOT NULL,
   PhoneNumber TEXT NOT NULL,
-  Email TEXT NOT NULL
-  -- Add address table later
-  -- FOREIGN KEY (AddressID) REFERENCES Address(AddressID)
+  Email TEXT NOT NULL,
+  AddressID INTEGER NOT NULL, -- Mandatory foreign key
+  FOREIGN KEY (AddressID) REFERENCES Address(AddressID)
 );
