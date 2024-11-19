@@ -1,0 +1,31 @@
+name: Check Rebuild Script
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  test-bash-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install SQLite
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y sqlite3
+        sqlite3 --version
+
+    - name: Make script executable
+      run: chmod +x ./rebuild_database.sh
+
+    - name: Create database
+      run: touch database/mot_garage_db.sqlite
+
+    - name: Run Bash script
+      run: |
+        ./scripts/your_script.sh
