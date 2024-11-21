@@ -1,7 +1,7 @@
 BEGIN TRANSACTION;
 
 -- Select data to be displayed
-Select
+SELECT
   Owner.FirstName,
   Owner.LastName,
   Car.Make,
