@@ -48,3 +48,28 @@ touch database/mot_garage_db.sqlite
 ```shell
 ./rebuild_database.sh
 ```
+
+## Helper scripts
+
+### Display Tables
+```shell
+./display_table.sh <table_name>
+```
+
+### List Tables
+
+### List all tables
+```shell
+./list_tables.sh <table_name>
+```
+
+### Find a specific table
+```shell
+./list_tables.sh -f <table_name>
+```
+
+## Run Query
+
+```shell
+./run_query.sh <1|2|3|4|5>
+```
