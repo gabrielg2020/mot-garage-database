@@ -6,6 +6,8 @@ INSERT INTO Mechanic (FirstName, LastName) VALUES
   ('Jane', 'Smith'),
   ('Mike', 'Johnson'),
   ('Emily', 'Davis'),
-  ('Chris', 'Brown');
+  ('Chris', 'Brown'),
+  ('Sarah', 'Wilson'),
+  ('David', 'Martinez'); 
 
 COMMIT;
