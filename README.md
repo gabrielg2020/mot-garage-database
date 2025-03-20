@@ -1,5 +1,7 @@
 # mot-garage-database
 
+# Score Recevied: 55%🎉
+
 This was built for my Data Modelling and Database Design Module (QAC020C123A).
 
 ## Description
